@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  margin-left: 220px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.dashboard .header .title {
+  font-size: 28px;
+  text-align: center;
+  background-color: #ffc107;
+  padding: 20px;
+  color: black;
+  margin: 0;
+  border-top: 4px solid #212f44;
+  border-bottom: 4px solid #212f44;
+  font-weight: bold;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.card-title {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-total {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-btn, .clear-search-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.clear-search-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.add-admins-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-admins-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.admin-table {
+  width: 108%;
+  border-collapse: collapse; 
+}
+
+.admin-table th, .admin-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #212f44;
+  border-right: 2px solid #dee2e6; 
+}
+
+.admin-table th:last-child, .admin-table td:last-child {
+  border-right: none; 
+}
+
+th {
+  background-color: #212f44;
+  color: white;
+}
+
+.admin-table td {
+  font-size: 16px;
+}
+
+.edit-btn, .delete-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ffc107;
+  color: white;
+}

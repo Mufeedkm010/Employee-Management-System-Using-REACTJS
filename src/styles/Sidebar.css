@@ -1,0 +1,123 @@
+.sidebar {
+    width: 200px;
+    background-color: #212f44;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .sidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 10px;
+    width: 100%;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  
+  .sidebar ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    transition: width 0.4s ease;
+  }
+  
+  .sidebar ul li a:hover::before {
+    width: 4px;
+  }
+  
+  .sidebar ul li a:hover {
+    background: linear-gradient(90deg, #40b9c2 0%, #2d98da 100%);
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateX(10px) scale(1.05);
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover .icon {
+    transform: rotate(360deg);
+  }
+  
+  .auth-container {
+    margin-top: auto;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .auth-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .auth-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    transition: width 0.4s ease;
+  }
+  
+  .auth-link:hover::before {
+    width: 4px;
+  }
+  
+  .auth-link:hover {
+    background-color: #d94fb0;
+    color: #ffffff;
+    transform: translateX(10px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .auth-icon {
+    margin-right: 10px;
+    font-size: 18px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .auth-link:hover .auth-icon {
+    transform: rotate(360deg);
+  }
